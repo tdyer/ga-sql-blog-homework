@@ -5,15 +5,6 @@
 - Sinatra
 - Ruby
 
-## Learning Objectives
-- Anatomy of a database (table, row, column, index, etc.)
-- Basic understanding that column data types exist and are different
-- Develop a level of proficiency with postgres.
-- Develop a level of proficiency with psql command line utility.
-- Data manipulation, aka DML. (SELECT, INSERT etc.)
-- Data definition, aka DDL. (CREATE TABLE, ADD COLUMN, etc.)
-- Use SQL scripts to load/manipulate data
-
 ## Requirements
 We are going to create a Blog using Sinatra and SQL. This Blog will have a set of Posts.
 
@@ -37,7 +28,8 @@ We are going to create a Blog using Sinatra and SQL. This Blog will have a set o
 ### Step 4, Create a Sinatra app that will:
 - Use the [pg gem](https://bitbucket.org/ged/ruby-pg/wiki/Home) to connect to the blog database.
 - Use the pg gem to execute the SQL that will read the posts from the database.
-- Show all the posts in the database.
+- Show all the posts in the database, which link to their individual posts.
+- Show individual posts
 
 #### Extra Special Bonus (if this was easy, you should do these):
 - Use Sinatra to create, update and delete posts. You'll need to use HTML forms and POST requests. Updating and deleting will be harder than creating. 
