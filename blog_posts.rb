@@ -24,4 +24,8 @@ blog_posts.each do |post|
 	query("INSERT INTO blog (subject, contents, created_at) VALUES ('#{post['subject']}', '#{post['contents']}', '#{post['timestamp']}')")
 end
 
-result = query("SELECT title, timestamp FROM blog_posts")
+
+get '/blog' do
+	@result = query("SELECT title, timestamp FROM blog_posts ORDER BY timestamp DESC")
+	erb :blog
+end
