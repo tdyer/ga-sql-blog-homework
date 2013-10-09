@@ -17,6 +17,9 @@
 ## Requirements
 We are going to create a Blog using Sinatra and SQL. This Blog will have a set of Posts and each Post will have a set of Comments.
 
+### Step 0, Create a Database named blog
+- Use the psql command line utility for this.
+
 ### Step 1, Create a Comments table with the following columns:
 *Create the SQL in the setup_ddl.sql file*
 
