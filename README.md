@@ -18,12 +18,16 @@
 We are going to create a Blog using Sinatra and SQL. This Blog will have a set of Posts and each Post will have a set of Comments.
 
 ### Step 1, Create a Comments table with the following columns:
+*Create the SQL in the setup_ddl.sql file*
+
 - id *(primary key)*
 - post_id *(foreign key)*
 - contents *(text for this Comment)*
 - created_at *(time when this Comment was created)*
 
 ### Step 2, Create a Posts table with the following columns:
+*Create the SQL in the setup_ddl.sql file*
+
 - id *(primary key)*
 - blog_id *(foreign key)*
 - subject *(Subject text of this Post)*
@@ -31,12 +35,16 @@ We are going to create a Blog using Sinatra and SQL. This Blog will have a set o
 - created_at *(time when this Post was created)*
 
 ### Step 3, Create a Blogs table with the following columns:
+*Create the SQL in the setup_ddl.sql file*
+
 - id *(primary key)*
 - name *(name of this Blog)*
 - created_at *(time when this Blog was created)*
 
 ### Step 4, Populate the Database with one Blog that has Posts and Comments.
-Create a setup.rb file where these tables are populated.
+*Create the SQL in the setup_dml.sql file*
+
+- **Note: This SQL is created in the setup_dml.sql file!!**
 
 ### Step 5, Create a Sinatra app that will:
 - Show all the Posts in a Blog.
