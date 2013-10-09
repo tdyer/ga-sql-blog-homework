@@ -1,0 +1,1 @@
+INSERT INTO blog (subject, contents, created_at) VALUES ('#{}', '#{}', '#{}');
