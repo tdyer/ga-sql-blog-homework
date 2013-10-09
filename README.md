@@ -39,8 +39,8 @@ We are going to create a Blog using Sinatra and SQL. This Blog will have a set o
 - Use the pg gem to execute the SQL that will read the posts from the database.
 - Show all the posts in the database.
 
-#### Extra:
-- Use Sinatra to create, update and delete posts.
+#### Extra Special Bonus (if this was easy, you should do these):
+- Use Sinatra to create, update and delete posts. You'll need to use HTML forms and POST requests. Updating and deleting will be harder than creating. 
 - Create a setup_ddl.rb and setup_dml.rb that will use the Ruby and pg gem to populate the database.
 
 
