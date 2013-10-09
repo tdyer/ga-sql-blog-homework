@@ -1,11 +1,23 @@
-require 'setup_db'
+DROP TABLE comments;
+CREATE TABLE comments (
+    id integer NOT NULL,
+    post_id integer,
+    contents text,
+    created_at timestamp without time zone
+);
 
-$db_conn.exec('CREATE DATABASE blog')
--- CREATE TABLE films (
---     code        char(5) CONSTRAINT firstkey PRIMARY KEY,
---     title       varchar(40) NOT NULL,
---     did         integer NOT NULL,
---     date_prod   date,
---     kind        varchar(10),
---     len         interval hour to minute
--- );
+DROP TABLE posts;
+CREATE TABLE posts (
+    id integer NOT NULL,
+    blog_id integer, 
+    subject character varying(255),
+    contents text,
+    created_at timestamp without time zone
+);
+
+DROP TABLE blogs;
+CREATE TABLE blogs (
+    id integer NOT NULL,
+    name character varying(255),
+    created_at timestamp without time zone
+);

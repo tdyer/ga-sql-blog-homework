@@ -24,9 +24,7 @@ blog_id = 1
 INSERT INTO comments ( id, post_id, contents, created_at) VALUES ('#{blog_id}', '#{post_id}', 'Blog Body #{blog_id}','#{Time.now}'); 
 IPT
   $db_conn.exec(insert_comment)
-  puts "i is #{i}"
   blog_id = blog_id + i +1
-
 end
 
 # create 2 Comments for the fifth Post
@@ -37,5 +35,4 @@ INSERT INTO comments ( id, post_id, contents, created_at) VALUES ('#{blog_id}', 
 IPT
   $db_conn.exec(insert_comment)
   blog_id = blog_id + i +1
-
 end
