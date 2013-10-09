@@ -1,0 +1,7 @@
+<h1>What Should I Read?</h1>
+<p class="italic">A menu of library offerings to inspire your next weekend...</p>
+
+<% @result.each do |entry| %>
+  <div class="blog_title"><h2><%= entry["subject"] %></h2> </div>
+  <div class="timestamp"><p>posted on <%= entry["created_at"] %></p></div>
+<% end %>
