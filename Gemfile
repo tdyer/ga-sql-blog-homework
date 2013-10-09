@@ -1,6 +1,6 @@
-source: 'https://rubygems.org'
+source 'https://rubygems.org'
 
 gem 'pry'
 gem 'sinatra'
 gem 'pg'
-gem 'sinatra-reloader' if development?
+gem 'sinatra-reloader'
