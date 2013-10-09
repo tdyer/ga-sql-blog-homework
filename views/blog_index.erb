@@ -1,0 +1,17 @@
+<div class="posts">
+
+
+<div class="student">
+
+	<% @entries.each do |entry| %>
+
+		<span class="name"><%= entry["title"] %></span><br/>
+		<span class="created">Created at <%= entry["created_at"] %></span><br/>
+		<span class="contents">Text: <%= entry["contents"] %></span><br/>
+		<br/>
+
+	<% end %>
+
+</div>
+
+</div>
