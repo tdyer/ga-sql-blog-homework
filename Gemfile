@@ -6,3 +6,9 @@ gem 'pry-debugger'
 gem 'simplecov', require: false
 gem 'guard-rspec'
 gem 'dotenv'
+
+gem 'sinatra'
+gem 'sinatra-reloader'
+
+# postgres gem
+gem 'pg'
