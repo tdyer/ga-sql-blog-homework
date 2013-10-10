@@ -1,0 +1,13 @@
+
+
+<% @result.each do |entry| %>
+ 
+<a href="/blog/<%=entry["id"] %>">
+ <div class="row"> 
+   <div class="title"><h2><%= entry["subject"] %></h2></div> 
+   <div class="fulltext"><p class="blog_entry"><%= entry["contents"] %>...</p></div>
+ </div>
+ </a>
+ <div class="timestamp"><p>posted on <%= entry["created_at"] %></p></div>
+ 
+<% end %>

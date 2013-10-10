@@ -1,0 +1,85 @@
+html {
+	background-color: grey;
+	font-family: 'Voltaire', sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+a.visited {
+	text-decoration: none;
+	color: black;
+}
+
+.link-back {
+	margin: 20px;
+}
+
+h2 {
+	font-family: 'Amarante', cursive;
+}
+
+p {
+	font-family: 'Amarante', cursive;
+}
+
+.header-box h1 {
+	font-family: 'Henny Penny', cursive;
+}
+.header-box {
+	margin: auto;
+/*	width: 1000px;*/
+	padding: 10px;
+	text-align: center;
+	background-color: rgba(128, 0, 128, 0.4);
+	color: rgba(190, 255, 134, 1.0000);
+/*	position: relative;*/
+	border: 5px black solid;
+}
+
+.title {
+	color: black;
+	text-align: center;
+	background-color: rgba(178, 255, 109, 1);
+	padding: 5px 0px;
+	border: 5px black solid;
+	position: relative;
+	margin-bottom: -5px
+}
+.fulltext {
+/*	width: 600px;*/
+	margin: auto;
+	height: 300px;
+	background-color: rgba(195, 141, 255, 1.0000);
+	border: 5px black solid;
+
+}
+
+p.blog_entry {
+	margin: auto;
+/*	padding: 20px;*/
+	color: white;
+	height: 240px;
+	padding: 30px;
+	width: 600px;
+	overflow: scroll;
+	background: rgba(124,124,124,0.5100);
+
+}
+
+.timestamp {
+	font-style: italic;
+	color: black;
+	text-align: left;
+	padding-left: 30px;
+	background: rgba(124,124,124,0.5100)
+}
+
+.row {
+	margin: auto;
+	background: white;
+	text-align: center;
+	padding: 5px;
+}
