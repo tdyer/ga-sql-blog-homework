@@ -16,9 +16,9 @@ get '/' do
 	erb :blog_index
 end
 
-get '/post/:id' do
-	@blog = query("SELECT * FROM blog ")
-	@id = params[:id].to_s
+get 'post/:id' do
+	@blog = query("SELECT * FROM blog WHERE id = #{id} LIMIT 1").first
+	@id = params[:id]
 
-	erb :single_post
+	erb :one_post
 end

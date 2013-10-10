@@ -26,7 +26,6 @@
 -moz-animation: fade-text 10s infinite;
 }
 
-Read more: http://www.ehow.com/how_12094961_make-text-fade-css.html#ixzz2hI0sxVfD
 .feature {
 	margin-bottom: 15px;
 	max-width: 100%;
@@ -40,7 +39,7 @@ body, div, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, form, fieldse
 
 body {
 	color: white;
-	margin: 300px;
+	margin: 200px;
 	background-image: url(http://www.nxtdsktp.com/wp-content/uploads/2013/07/HD-Website-Backgrounds-for-Desktop.jpg); fixed
 }
 

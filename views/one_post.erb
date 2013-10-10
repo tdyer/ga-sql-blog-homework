@@ -1,0 +1,6 @@
+<div class="container">
+<% post = @blog[@id.to_i] %>
+	<div class="subject"><h2><%= post['subject'] %></h2></div>
+	<div class="contents"><h2><%= post['contents'] %></h2></div>
+	<div class="created_at"><h2><%= post['created_at'] %></h2></div>
+</div>
