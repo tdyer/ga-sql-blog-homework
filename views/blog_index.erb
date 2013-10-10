@@ -1,0 +1,14 @@
+<div class="posts">
+	
+<% @blog.each do |post| %>
+
+	<div class="subject"><h2><%= post["subject"] %></a></h2></div>
+
+	<div class ="contents"><p><%= post["contents"] %></p></div>
+
+	<div class="created_at"><h5><%= post["created_at"] %></h5></div>
+<% end %>
+
+</div>
+
+
