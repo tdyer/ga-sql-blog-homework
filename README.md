@@ -1,4 +1,4 @@
-# SQL Blog
+## SQL Blog
 
 ##Prereqs
 - SQL
@@ -9,11 +9,11 @@
 We are going to create a Blog using Sinatra and SQL. This Blog will have a set of Posts.
 
 ### Step 1, Create a Database named blog
-- Use the psql command line utility for this.
+# check! - Use the psql command line utility for this. 
 
 
 ### Step 2, Create a Posts table with the following columns:
-*Create the SQL in the setup_ddl.sql file, and load this file into the DB using psql.*
+# *Create the SQL in the setup_ddl.sql file, and load this file into the DB using psql.*
 
 - id *(primary key)*
 - subject *(Subject text of this Post)*

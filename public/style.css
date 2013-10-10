@@ -1,0 +1,19 @@
+.entries {
+	font-family: Helvetica;
+}
+
+.entry {
+	font-family: Helvetica;
+}
+
+.timestamp {
+	font-size: 20px;
+}
+
+.title {
+	font-size: 50px;
+}
+
+.post {
+	font-size: 25px;
+}
