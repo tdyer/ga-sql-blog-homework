@@ -1,14 +1,22 @@
-<div class='blogs'>
+<h1>CHECK OUT MY BLOG!</h1>
 
-	<% @blogs.each do |blog| %>
+<div class='blog-container'>
+
+	<% @posts.each do |blog| %>
 	<div class="blog">
-		<span class="subject">SUBJECT: <%=blog["subject"]%></span>
+		<a href="/blog/<%=blog["id"]%>"><h2>SUBJECT: <%=blog["subject"]%></h2></a>
 		</br>
+		
 		<span class="contents"><%=blog["contents"]%></span>
 		</br>
 		<span class="created_at">CREATED AT: <%=blog["created_at"]%></span>
 		</br>
 		</br>
 	</div>
+
+	<form action="/blog/<%= blog["id"] %>/delete" method="post">
+		<input type="submit" name="delete post" value="delete" />
+	</form>
+
 	<%end%>
 </div>
