@@ -39,3 +39,18 @@ post '/blog/entry' do
 
   erb :blog_entry
 end
+
+
+get '/blog/new' do 
+   
+  erb :new_entry
+end
+
+
+post '/blog/post/create' do 
+   @post_subject = params[:subject]
+   @post_body = params[:text]
+
+   query("INSERT INTO blog (subject, contents) VALUES ('#{@post_subject}', '#{@post_body}')")
+
+end
