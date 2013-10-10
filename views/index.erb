@@ -1,0 +1,14 @@
+<div class='blogs'>
+
+	<% @blogs.each do |blog| %>
+	<div class="blog">
+		<span class="subject">SUBJECT: <%=blog["subject"]%></span>
+		</br>
+		<span class="contents"><%=blog["contents"]%></span>
+		</br>
+		<span class="created_at">CREATED AT: <%=blog["created_at"]%></span>
+		</br>
+		</br>
+	</div>
+	<%end%>
+</div>
