@@ -1,6 +1,6 @@
 html {
 	background-color: grey;
-	font-family: helvetica;
+	font-family: 'Voltaire', sans-serif;
 }
 
 a {
@@ -17,7 +17,17 @@ a.visited {
 	margin: 20px;
 }
 
+h2 {
+	font-family: 'Amarante', cursive;
+}
 
+p {
+	font-family: 'Amarante', cursive;
+}
+
+.header-box h1 {
+	font-family: 'Henny Penny', cursive;
+}
 .header-box {
 	margin: auto;
 /*	width: 1000px;*/
@@ -25,7 +35,7 @@ a.visited {
 	text-align: center;
 	background-color: rgba(128, 0, 128, 0.4);
 	color: rgba(190, 255, 134, 1.0000);
-	position: relative;
+/*	position: relative;*/
 	border: 5px black solid;
 }
 
@@ -63,12 +73,13 @@ p.blog_entry {
 	font-style: italic;
 	color: black;
 	text-align: left;
-	margin-left: 30px;
+	padding-left: 30px;
+	background: rgba(124,124,124,0.5100)
 }
 
 .row {
 	margin: auto;
 	background: white;
 	text-align: center;
-	padding: 20px 0px;
+	padding: 5px;
 }
