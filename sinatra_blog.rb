@@ -20,7 +20,7 @@ end
 
 get '/blog/:id' do
 	id=params[:id]
-	@blog=query("SELECT * FROM blog where id = #{:id}")
+	@blog=query("SELECT * FROM blog where id = '#{id}'")
 	erb :one_post
 end 
 
