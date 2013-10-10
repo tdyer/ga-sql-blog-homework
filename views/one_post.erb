@@ -1,11 +1,10 @@
 <% @blog.each do |posts| %>
  
-<a href="/blog/<%=posts["id"] %>">
  <div> 
    <div><h2><%= posts["subject"] %></h2></div> 
    <div><p><%= posts["contents"] %></p></div>
  </div>
- </a>
+
  <div><p><%= posts["created_at"] %></p></div>
  
 <% end %>
