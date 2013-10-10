@@ -1,0 +1,25 @@
+body {
+  font-family: Gill Sans;
+  text-align: center;
+}
+.post-title {
+  font-size: 30px;
+  margin-bottom: 100px;
+}
+.created-at {
+  position: relative;
+  text-align: right; /*not working*/
+  font-size: 10px;
+}
+.blog-entry-container {
+  position: relative;
+  text-align: center;
+  margin: 30px 100px 30px 250px;
+
+}
+.blog-entry {
+  position: relative;
+  text-align: justify;
+  font-size: 20px;
+  width: 900px;
+}

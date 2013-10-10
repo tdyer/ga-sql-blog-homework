@@ -1,9 +1,10 @@
 <div class="posts">
   <% @posts.each do |post| %>
-    <div class="post">
-      <div class="post-title"><%= post["subject"] %><div>
-      <div class="created_at"><%= post["created_at"] %></span>
-      <div class="blog-entry"><%= post["contents"] %></div>
+    <div class="post-title"><%= post["subject"] %><div>
+    <div class="blog-entry-container">
+      <div class="blog-entry"><%= post["contents"] %>
+        <span class="created-at"><%= post["created_at"] %></span>
+      </div>
     </div>
   <% end %>
 </div>

@@ -26,9 +26,11 @@ I’m not exactly sure how I feel about Rust’s use of the semicolon, but I agr
 
 Despite Kurt Vonnegut’s distaste for “transvestite hermaphrodites" in creative writing, I’d like to think he’d approve of their use in Rust.');
 INSERT INTO posts (subject, contents) VALUES ('mruby', 'Interactive Ruby interpreter running in a browser. Nice.');
-INSERT INTO posts (subject, contents) VALUES ('Brython', 'Brython’s goal is to replace Javascript with Python, as the scripting language for web browsers
+INSERT INTO posts (subject, contents) VALUES ('Brython', 'Brython’s goal is to replace Javascript with Python, as the scripting language for web browsers.
+  
 This is a really ambitious project and it has a long, hard road to travel to achieve its stated end, but I’m all for dethroning Javascript as the premier scripting language for the web.
 
 It’s not that Javascript isn’t good enough — kick-ass JS libraries, frameworks, and applications abound — but there certainly seem to be languages that are better-suited for client-side web programming in the long run.
 
 Given the choice, I’d pick Python over Javascript any day. And I imagine I’m far from alone.');
+UPDATE posts SET created_at = CURRENT_DATE;
