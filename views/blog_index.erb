@@ -1,16 +1,30 @@
-<div class="blog">
+<div class="posts">
+
+  <h1>Blog Homepage</h1>
+
+  <form action="/blog/new" method="get">
+    <button type="submit">Create new post</button>
+  </form>
+
+  <div class="entry">
+
+    <% @entries.each do |entry| %>
+
+    <span class="name"><%= entry["title"] %></span><br/>
+    <span class="created">Created at <%= entry["created_at"] %></span><br/>
+    <span class="contents">Text: <%= entry["contents"] %></span><br/>
+    <br/>
 
 
-<div class="blog">
+    <form action='/blog/entry' method='post'>
+      <select name="id">
+        <option type='submit' value = "<%= entry["id"] %>">Submit</option>
+      </select>
+      <input type='submit' value = 'submit'></submit>
+    </form>
 
-<% @entries.each do |entry| %>
+    <% end %>
 
-  <span class="title"><%= entry["subject"] %>, created at <%= entry[created_at] %></span><br/>
-  <span class="contents"><%= entry[contents] %></span><br/>
-<br/>
-
-<% end %>
-
-</div>
+  </div>
 
 </div>

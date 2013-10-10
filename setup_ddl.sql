@@ -1,3 +1,11 @@
+-- this will create a table
+
+-- - id *(primary key)*
+-- - subject *(Subject text of this Post)*
+-- - contents *(Post)*
+-- - created_at *(time when this Post was created)*
+
+
 DROP TABLE blog;
 
 CREATE TABLE blog
@@ -18,3 +26,6 @@ INSERT INTO blog (subject, contents) VALUES ('Post 7', 'Hello World #7!');
 INSERT INTO blog (subject, contents) VALUES ('Post 8', 'Hello World #8!');
 INSERT INTO blog (subject, contents) VALUES ('Post 9', 'Hello World #9!');
 INSERT INTO blog (subject, contents) VALUES ('Post 10', 'Hello World #10!');
+
+
+SELECT * FROM blog;
