@@ -20,9 +20,9 @@ get '/blog' do
 end
 
 
-# get '/post/:id' do
-# 	@blog = query("SELECT * FROM blog ")
-# 	@id = params[:id].to_s
+ get '/blog/:id' do
+ 	post_id = params[:id]
+	@blog = query("SELECT * FROM blog WHERE id = #{post_id} LIMIT 1").first
+ 	erb :single_post
+ end
 
-# 	erb :single_post
-# end
