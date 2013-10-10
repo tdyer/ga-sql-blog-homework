@@ -1,0 +1,9 @@
+<div id='everything' class='entries'>
+	<% @entry.each do |thing| %>
+		<div class='entry'>
+			<span class='timestamp'> <%= thing['created_at'] %> </span> 
+			<span class='title'> <%= thing['subject'] %> </span> 
+			<span class='post'> <%= thing['contents']%> </span>
+</div>
+<% end %>
+</div>
