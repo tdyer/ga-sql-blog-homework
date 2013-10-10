@@ -1,6 +1,6 @@
 <div class="posts">
   <% @posts.each do |post| %>
-    <div class="post-title"><%= post["subject"] %><div>
+    <a href="/posts/<%= post["id"] %>"><div class="post-title"><%= post["subject"] %><div></a>
     <div class="blog-entry-container">
       <div class="blog-entry"><%= post["contents"] %>
         <span class="created-at"><%= post["created_at"] %></span>
