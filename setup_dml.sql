@@ -1,0 +1,1 @@
+INSERT INTO posts (subject, contents) VALUES ('Post #1', 'Hello, World! G''day!')
