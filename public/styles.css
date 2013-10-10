@@ -1,3 +1,31 @@
+body {
+	font-family: 'Noto Sans', sans-serif;
+	background: grey;
+	color: white;
+}
+
 .heading {
 	text-align: center;
+}
+
+.subject {
+
+}
+
+.contents {
+
+}
+
+.created_at {
+
+}
+
+a {
+	text-decoration: none;
+	color: FF80A9;
+
+}
+
+a:hover {
+	color: yellow;
 }

@@ -1,4 +1,7 @@
-<% post = @blog[@id.to_i - 1] %>
-<div><%= post['subject'] %></div>
-<div><%= post['contents'] %></div>
-<div><%= post['created_at'] %></div>
+<div class="singlepost">
+<% post = @blog[@id.to_i] %>
+<div class="subject"><%= post['subject'] %></div>
+<div class="contents"><%= post['contents'] %></div>
+<div class="created_at"><%= post['created_at'] %></div>
+
+</div>
