@@ -1,7 +1,8 @@
 <div class="posts">
 
+<h1>Blog Homepage</h1>
 
-<div class="student">
+<div class="entry">
 
 	<% @entries.each do |entry| %>
 
@@ -9,6 +10,14 @@
 		<span class="created">Created at <%= entry["created_at"] %></span><br/>
 		<span class="contents">Text: <%= entry["contents"] %></span><br/>
 		<br/>
+
+
+		<form action='/blog/entry' method='post'>
+			<select name="id">
+			<option type='submit' value = "<%= entry["id"] %>">Submit</option>
+			</select>
+			<input type='submit' value = 'submit'></submit>
+		</form>
 
 	<% end %>
 
