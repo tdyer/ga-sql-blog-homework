@@ -2,6 +2,7 @@
 <p class="italic">A menu of library offerings to inspire your next weekend...</p>
 
 <% @result.each do |entry| %>
-  <div class="blog_title"><h2><%= entry["subject"] %></h2> </div>
+  <div id="<%=entry["subject"] %>"><a href="/blog/<%=entry["id"] %>"><h2><%= entry["subject"] %></h2></a> </div>
   <div class="timestamp"><p>posted on <%= entry["created_at"] %></p></div>
+  <div class="fulltext"><p class="blog_text"><%= entry["content"] %></p></div>
 <% end %>
