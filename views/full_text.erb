@@ -1,5 +1,5 @@
 <% @result.each do |entry| %>
 <h1><%= entry["subject"] %></h1>
-<p class="blog_entry"><%= entry["contents"] %></p>
-<a href="/blog" class="link">back to the main blog page</a>
+<div class="fulltext"><p class="blog_entry"><%= entry["contents"] %></p></div>
+<div class="link-back"><a href="/blog" class="link">back to the main blog page</a></div>
 <% end %>
