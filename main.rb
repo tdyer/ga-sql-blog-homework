@@ -17,7 +17,7 @@ get '/posts' do
   erb :posts
 end
 
-# this will be for showing the form to create new posts
+# show the form to create new posts
 # get 'posts/new' do 
 #   erb :post_new
 # end
