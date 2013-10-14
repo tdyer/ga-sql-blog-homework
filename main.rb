@@ -22,14 +22,6 @@ get '/posts/new' do
   erb :post_new
 end
 
-# submit new post and show created post on index page
-post '/posts/create' do 
-  title = params[:title]
-  content = params[:content]
-  query("INSERT INTO posts (subject, contents) VALUES ('#{title}', '#{content}')")
-  redirect '/posts'
-end
-
 # show a single post on its own page
 get '/posts/:id' do
   post_id = params[:id]
@@ -37,3 +29,10 @@ get '/posts/:id' do
   erb :post_show
 end
 
+# submit new post and show created post on index page
+post '/posts/create' do 
+  title = params[:title]
+  content = params[:content]
+  query("INSERT INTO posts (subject, contents) VALUES ('#{title}', '#{content}', CURRENT_DATE)")
+  redirect '/posts'
+end
