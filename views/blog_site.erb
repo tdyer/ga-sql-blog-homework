@@ -1,0 +1,23 @@
+
+<a href="/blog/new"><p>Click here to add link!</p></a>
+
+<% @blog.each do |posts| %>
+ <div> 
+   <div><a href="/blog/<%=posts["id"] %>"><h2><%= posts["subject"] %></h2></a></div> 
+   <div><p><%= posts["contents"] %></p></div>
+ </div>
+ <div><p><%= posts["created_at"] %></p></div>
+ <div class = 'buttons' ><form action="/blog/<%=posts["id"]%>/delete" method="post">
+		<input type="submit" name="Delete" value="delete" />
+	</form></div>
+	<div class = 'buttons' ><form action="/blog/<%=posts["id"]%>/edit" method="get">
+		<input type="submit" name="Update" value="Update" />
+	</form></div>
+<% end %>
+
+
+
+
+
+
+
