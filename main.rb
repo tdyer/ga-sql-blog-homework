@@ -17,6 +17,13 @@ get '/posts' do
   erb :post_index
 end
 
+# deletes a post and redirects to index page
+post '/posts/:id/delete' do
+  post_id = params[:id]
+  query("DELETE FROM posts WHERE id = #{post_id}")
+  redirect '/posts'
+end
+
 # show the form to edit a given post
 get '/posts/:id/edit' do
   post_id = params[:id]

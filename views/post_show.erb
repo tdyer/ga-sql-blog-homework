@@ -3,4 +3,7 @@
   <div class="blog-entry"><%= @post["contents"] %>
     <span class="created-at"><%= @post["created_at"] %></span>
   </div>
+  <form action="/posts/<%= @post["id"] %>/delete" method="post">
+    <button type="submit">Delete</button>
+  </form>
 </div>
