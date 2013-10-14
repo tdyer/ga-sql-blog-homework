@@ -1,0 +1,39 @@
+body {
+  font-family: Gill Sans;
+  text-align: center;
+  width: 900px;
+  margin: 0 auto;
+}
+h1 {
+  font-size: 50px;
+  margin: 50px auto;
+  text-shadow: 0.05em 0.05em 0.1em black;
+  border: 1px solid black;
+  width: 80px;
+  height: 70px;
+}
+.post-title {
+  font-size: 30px;
+  margin-bottom: 100px;
+}
+a {
+  color: black;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+a:hover {
+  color: red;
+}
+.created-at {
+  float: right;
+  margin-top: 10px;
+  font-size: 10px;
+}
+.blog-entry-container {
+  margin: 30px auto;
+
+}
+.blog-entry {
+  text-align: justify;
+  font-size: 20px;
+}
