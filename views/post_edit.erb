@@ -1,0 +1,7 @@
+<form action="/posts/<%= @post["id"] %>/update" method="post">
+  <input type="text" name="title" value="<%= @post["subject"] %>"/>
+  <textarea name="content">
+    <%= @post["contents"] %> 
+  </textarea>
+  <button type="submit">Update</button>
+</form>
